@@ -29,295 +29,313 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 1.) Begin by creating a virtual machine (VM) by going to https://portal.azure.com/. Setup your virtual machine with Windows 10 Pro, version 22H2. 
-<b>Note: you will want to create a virtual machine with at least 2 vcpus and 16 gbs of memory.</b>
+<b>Note: you should create a virtual machine with at least 2 vcpus and 16 GiB of memory.</b>
 <p></p>
-2.) Once you have created your virtual machine connect to it by using the public IP address of the VM. You will connect using the remote desktop connection app. 
+2.) Once you have created your virtual machine, connect to it by using the public IP address of the VM which can be found by clicking on the VM's name in Azure. You will connect to the VM by entering the public IP address into the remote desktop connection app in Windows.
 </p>
 <br />
 
 <p>
-<img src="https://imgur.com/MAhXK2e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 142454](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/7551a5f7-e711-47b6-9a44-06db8a36dad3)
+
 </p>
 <p>
 <p>
-<img src="https://imgur.com/Zf2jw07.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 143334](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/5b420889-e02e-406d-8dd5-1379f49cce99)
+
 </p>
 <p>
   
-3.) Once you have connected to your virtual machine you will want to go to your control panel. From the control panel open up programs. Select, Turn Windows features on and off.
+3.) After connecting to and setting up the VM go to the control panel. From the control panel select "programs". Then select "Turn Windows features on and off".
 
 <p>
-<img src="https://imgur.com/fGXMpx4.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 143858](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/85f9c9a5-1782-4784-9b97-8e8fcb28cbfe)
+
 </p>
 <p>
   
 <p>
-<img src="https://imgur.com/LBGkAw6.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 143836](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/b4faa255-2702-4a27-b416-e0d61f0d4161)
+
 </p>
 <p>
   
-4.) You will want to install / enable IIS in Windows with CGI and Common HTTP Features
-  - World Wide Web Services -> Application Development Features -> 
-[X] CGI
-[X] Common HTTP Features
-  
+4.) Next you will need to install / enable IIS in Windows along with CGI and <b>ALL</b> Common HTTP Features
+
 <p>
-<img src="https://imgur.com/LQjw9le.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 144823](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/1282f875-6369-4b34-845d-365c785a8f86)
+
 </p>
 <p>
-  
-<p>
-<img src="https://imgur.com/pbPeHb1.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-  
-***NOTE*** Make sure all Common HTTP Features are checked.
  
- To make sure the IIS is installed / enabled go to a browser of your choice and search for 127.0.0.1 
-  It should look something like this. 
+ To test if the IIS is installed / enabled properly, go to a browser and type 127.0.0.1 into the search bar.
+ You should see this: 
   
 <p>
-<img src="https://imgur.com/eICujoq.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 145558](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/1bd56a76-cb31-4d17-a03d-e4190e327c02)
+
+
 </p>
 <p>
   
+5.) From the provided list of downloads above, download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
   
+6.) Next from the same list of downloads, download and install the Rewrite Module (rewrite_amd64_en-US.msi)
   
+7.) Create a folder in the C drive and title it "PHP".
+
+<p>
+
+![Screenshot 2023-06-30 150754](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/e82f3e9d-8285-45c6-87b2-1b7b5e1127d8)
   
-5.) Now that the IIS is enabled, From the Installation Files, download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
-  Go through the install wizard and complete the install.
+</p>
   
-6.) Next from the Installation Files, download and install the Rewrite Module (rewrite_amd64_en-US.msi)
+8.) From the list of downloads, download PHP 7.3.8 (php-7.3.88-nts-Win32-VC15-x866.zip) and unzip the contents into C:\PHP
   
-7.) Create a folder in the C drive called PHP.
+9.) After extracting the zip file into the PHP folder, download and install the VC_redist.x86.exe from the list of downloads.
   
-8.) From the Installation Files, download PHP 7.3.8 (php-7.3.88-nts-Win32-VC15-x866.zip) and unzip the contents into C:\PHP
-  
-  !! ATTENTION !!
-If this appears, choose to “Keep” the file:
+10.) Next, download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi).  Run the setup wizard selecting "Typical Setup" and then "Launch Configuration Wizard" followed by "Standard Configuration".
+
+Make the new root password: <b>Password1</b>
   
 <p>
-<img src="https://imgur.com/xZv1Yhw.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 151750](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/4d51006e-36a6-4124-bb64-831f6bbce818)
+
 </p>
 <p>
   
+Execute the process.
+  
+</p>
 <p>
-<img src="https://imgur.com/YwBhqo0.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+11.) Next search for IIS in the windows search bar and open it as administrator.
+
+<p>
+  
+![Screenshot 2023-06-30 152258](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/a4e83ffb-202b-4fa5-baad-e45bee93ae0f)
+
+</p>
+<p>
+  
+12.) Register PHP from within IIS by selecting "PHP Manager" and then "Register new PHP version".
+  
+<p>
+  
+![Screenshot 2023-06-30 152741](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/8b500888-f14c-4f2e-9975-c1a29313088e)
+
 </p>
 <p>
 
-9.) Once you have downloaded and extracted the zip file into the PHP folder on the C drive, download and install the VC_redist.x86.exe from the installation files. Go through the setup wizard to finish setting up and installing the VC_redist.x86.exe. 
-  
-10.) Download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi)
-  Run the setup wizard:
-Typical Setup ->
-Launch Configuration Wizard (after install) ->
-Standard Configuration ->
+![Screenshot 2023-06-30 152913](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/bdc4e2ff-bb86-497e-9027-4c6dc9a294ce)
 
-  Make the new root password: Password1
+</p>
+
+<p>
+  
+You should provide a path to the PHP executable file (php-cgi.exe) by going to the C Drive, then PHP folder and clicking on the php-cgi file.
   
 <p>
-<img src="https://imgur.com/KxcUy7C.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 153347](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/77e869bc-6d45-41e8-93d9-3fe691e949cf)
+
 </p>
 <p>
   
-  Execute the process on the next page.
+Restart the IIS server.
   
 <p>
-<img src="https://imgur.com/i7sn6hT.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 155830](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/4dff4de4-dd08-423d-a88c-67d919a1b1a7)
+
+
 </p>
 <p>
   
-11.) Now that we have the files downloaded and installed we will want to search for IIS in the windows search bar. Open IIS as an administrator.
-  The program should look like this.
+13.) Download osTicket from the provided list of downloads. Extract and copy "Upload" folder to c:\inetpub\wwwroot. Within c:\inetpub\root rename "Upload" to "osTicket".
+  
+Restart the IIS server again.
+  
+14.) Within IIS expand "Sites", then "Default", and finally "osTicket".  In the right column, select “Browse *:80 (http)”
   
 <p>
-<img src="https://imgur.com/rgdZwmM.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 160647](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/96ab3b2c-a770-4e82-8c2c-07ce53af5bc5)
+
 </p>
 <p>
   
-12.) We will now want to register PHP from within IIS.
-  Click on PHP Manager
+You will observe that some recommended extensions are not enabled on the osTicket browser.
   
 <p>
-<img src="https://imgur.com/vvTLNBH.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 161111](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/d04b8e3d-7765-49d0-bcf9-ff2e46ad1e04)
+
+
 </p>
 <p>
   
-Register new PHP version.
+To enable the necessary extensions return to IIS.  Select "Sites", then "Default", and then "osTicket".  Double click "PHP manager" then "Enable or disable an extension"
   
 <p>
-<img src="https://imgur.com/qdbn5zQ.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
   
-You will want to provide a path to the php executable file (php-cgi.exe)). 
-  Go to C Drive -> PHP -> click on php-cgi file.
+Enable the following extensions:
   
-<p>
-<img src="https://imgur.com/oJZ0gp9.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-  
-  Restart the IIS server.
-  
-<p>
-<img src="https://imgur.com/CJ3RUbG.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-  
-13.) Install osTicket v1.15.8
-  -Download osTicket from the Installation Files Folder
-  -Extract and copy "upload" folder to c:\inetpub\wwwroot
-  -Within c:\inetpub\root, Rename "upload" to "osTicket"
-  
-  Reload IIS again.
-  
-14.) On IIS go to sites -> Default -> osTicket
-  -On the right, click “Browse *:80”
-  
-<p>
-<img src="https://imgur.com/Yw55d5b.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-  
-  Some extensions are not enabled on the osTicket browser.
-  
-<p>
-<img src="https://imgur.com/eJIsGTn.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-  
-  To enable the extensions:
-  -Go back to IIS, sites -> Default -> osTicket
-  -Double click PHP manager
-  -Click "Enable or disable an extension"
-  
-<p>
-<img src="https://imgur.com/vvTLNBH.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-  
-<p>
-<img src="https://imgur.com/uigyKjb.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-  
-  We will want to enable three extensions from here.
-  
-  1.) php_imap.dll
+- php_imap.dll
  
-  2.) php_intl.dll
+- php_intl.dll
   
-  3.) php_opcache.dll
+- php_opcache.dll
   
 <p>
-<img src="https://imgur.com/cOem7Nb.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+
+![Screenshot 2023-06-30 161507](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/4c68e1a3-0ca7-4c62-9a2e-426bd04539af)
+
 </p>
 <p>
   
   
-15.) Once we have those extensions enabled in IIS, we are going to want to rename one of the files in our osTicket folder.
-  Go into the file explorer and search for C;\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+15.) Next you will need to rename one of the files in the osTicket folder by going to the file explorer and searching for C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
   
-  We are going to rename the ost-sampleconfig.php to ost-config.php
+Rename this file ost-config.php.
   
-  Now that we have renamed the files, right click on the file and go to properties.
-  From there click security, click on advance, and disable the inheritance.
-  We will select Remove all inherited permissions from this object.
+Right click on the file and select "Properties".  
+From there click "Security" then "Advanced".
+
+<p>
+
+![Screenshot 2023-06-30 162302](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/559a8df5-0f87-49f6-9961-3c9acffac14f)
+
+</p>
+<p>
+
+Remove all inherited permissions from this object by clicking "Remove all inherited permissions from this object".
+
+<p>
+
+![Screenshot 2023-06-30 162344](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/653819b4-ac60-4fd0-88b9-e70a3c99ced2)
+
+<p>
   
-  Now we will add new permissions.
-  
-  Click Add
+Now add new permissions by selecting "Add".
   
 <p>
-<img src="https://imgur.com/VPZvOdo.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 162829](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/a41be098-1365-4884-bed1-8246ba729cd8)
+
 </p>
 <p>
   
-Select a principal
+Select a principal.
   
 <p>
-<img src="https://imgur.com/PoGk34d.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 163405](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/cedd1941-9aa9-401b-85b6-16aed5ecc2ec)
+
 </p>
 <p>
   
   
- Type "Everyone" in the box.
+Enter "Everyone" into the box and click "OK".
   
 <p>
-<img src="https://imgur.com/F4H3ppM.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 163532](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/9c8bf06e-54db-4a42-8a0b-417fedc90a5d)
+
 </p>
 <p>
   
-  Make sure Full Control and all the other boxes are checked.
+Check all boxes and click "OK".
   
 <p>
-<img src="https://imgur.com/rbbGqwB.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 163804](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/fc6bce4e-5cf5-4b8b-a544-0295431ffe29)
+
 </p>
 <p>
   
-  Click Apply and Ok.
+Click "Apply" and then "OK".
   
 <p>
-<img src="https://imgur.com/saRO3y5.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+To continue setting up osTicket in the browser click "Continue" on the osTicket browser page.
+Fill out the page as required ignoring (for now) "Database Settings" at the bottom of the page.
+  
+Next, you need to download, install, and launch HeidiSQL from the provided downloads. 
+  
+<p>
+  
+Once the program is launched, create a new session in it.
+  
+<p>
+  
+![Screenshot 2023-06-30 164614](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/4099b503-923d-4d99-9acc-4b244263b82e)
+
 </p>
 <p>
   
-  Once that is done we will continue to setup osTicket in the browser. Click Continue on the osTicket browser page.
-  Fill out the page as required except the Database Settings at the bottom of the page. We will get to that. 
-  
-  We will want to download and install HeidiSQL from the Installation Files. 
+Set the user to "root" and the password to "Password1".  Click "Open".
   
 <p>
-<img src="https://imgur.com/i7a4gWC.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+
+![Screenshot 2023-06-30 164755](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/25e82c16-ab96-4b41-aa1a-d6e2817f6591)
+
 </p>
 <p>
   
-  When the program is open we will create a new session in it.
+Once connected, return to the browser to finish setting everything up. 
+
+Under "Database Settings" enter the user "root" and the password "Password1".
+  
+Next you need to create a new database within HeidiSQL. In HeidiSQL, right click "Unnamed" on the left side, select "Create new", and then select "Database". 
+
+<p>
+
+![Screenshot 2023-06-30 165150](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/788dad7d-bcd0-4636-82e8-d1c38cc292ab)
+
+<p>
+
+Name the new database "osTicket". 
+
+Return to the osTicket browser and under MySQL Database type in "osTicket".
   
 <p>
-<img src="https://imgur.com/g5M1i61.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 165406](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/3fa527d4-5d66-4925-b3d6-92caaa3b66e6)
+
 </p>
 <p>
   
-  We want to make sure the username is root and the password is Password1.
+The last step is to do some clean up.  Start by deleting the setup folder. Delete: C:\inetpub\wwwroot\osTicket\setup
+  
+Next, set the permissions back to "Read" only in the ost-config.php file.
   
 <p>
-<img src="https://imgur.com/LEAZNOc.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
   
-  Once we are connected to the session we will go back to the browser to finish setting everything up. Under the Database Settings in the browser the username will be root and the password will be Password1.
-  
-  We will now create a new database within HeidiSQL. In Heidi right click on the left side where is says "Unnamed", select "create new", and then select "database". Name the new database osTicket. Once we have the new database setup go back to the osTicket browser and under MySQL Database type in osTicket.
-  
-<p>
-<img src="https://imgur.com/0rG1AJm.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-  
-  The last step is to do some clean up. We will want to delete the setup folder in our system. 
-  -Delete: C:\inetpub\wwwroot\osTicket\setup
-  Only delete the setup folder and nothing else.
-  
-  We then will want to set the permissions back to "Read" only in the ost-config.php file.
-  
-<p>
-<img src="https://imgur.com/wFr0pkK.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+![Screenshot 2023-06-30 165823](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/4bfe4773-4ab1-43a1-a3c4-3c7aca73f582)
+
 </p>
 <p>
   
 <p>
-<img src="https://imgur.com/jsJOPyn.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  
+![Screenshot 2023-06-30 165847](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/492019cf-d8fe-4e98-bc48-ebac68939e90)
+
 </p>
 <p>
   
-  The last step after that is to login to osTicket on the browser.
+Finally, login to osTicket in the browser.
   
 <p>
 <img src="https://imgur.com/uHVdDsx.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   
-  Congrats! You have now successfully installed and setup osTicket!
+  Congratulations! You have successfully installed and setup osTicket.
