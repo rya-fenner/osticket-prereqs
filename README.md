@@ -36,14 +36,16 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <br />
 
 <p>
-  
-![Screenshot 2023-06-30 142454](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/7551a5f7-e711-47b6-9a44-06db8a36dad3)
+
+<img src="https://imgur.com/GxzVn0K.png" alt="osTicket logo"/>
+
 
 </p>
 <p>
 <p>
   
-![Screenshot 2023-06-30 143334](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/5b420889-e02e-406d-8dd5-1379f49cce99)
+<img src="https://imgur.com/tWQoa3t.png" alt="osTicket logo"/>
+
 
 </p>
 <p>
@@ -51,15 +53,13 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 3.) After connecting to and setting up the VM go to the control panel. From the control panel select "programs". Then select "Turn Windows features on and off".
 
 <p>
-  
-![Screenshot 2023-06-30 143858](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/85f9c9a5-1782-4784-9b97-8e8fcb28cbfe)
+
+<img src="https://imgur.com/25ndQZ8.png" alt="osTicket logo"/>
 
 </p>
 <p>
   
-<p>
-  
-![Screenshot 2023-06-30 143836](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/b4faa255-2702-4a27-b416-e0d61f0d4161)
+<img src="https://imgur.com/rCLOIuT.png" alt="osTicket logo"/>
 
 </p>
 <p>
