@@ -68,7 +68,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
   
-![Screenshot 2023-06-30 144823](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/1282f875-6369-4b34-845d-365c785a8f86)
+<img src="https://imgur.com/N3z5e0g.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -78,8 +78,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   
 <p>
   
-![Screenshot 2023-06-30 145558](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/1bd56a76-cb31-4d17-a03d-e4190e327c02)
-
+<img src="https://imgur.com/SFYB1Bi.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -92,7 +91,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
 
-![Screenshot 2023-06-30 150754](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/e82f3e9d-8285-45c6-87b2-1b7b5e1127d8)
+<img src="https://imgur.com/LsGX4o5.png" alt="osTicket logo"/>
   
 </p>
   
@@ -106,7 +105,7 @@ Make the new root password: <b>Password1</b>
   
 <p>
   
-![Screenshot 2023-06-30 151750](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/4d51006e-36a6-4124-bb64-831f6bbce818)
+<img src="https://imgur.com/xnHYRad.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -119,8 +118,8 @@ Execute the process.
 11.) Next search for IIS in the windows search bar and open it as administrator.
 
 <p>
-  
-![Screenshot 2023-06-30 152258](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/a4e83ffb-202b-4fa5-baad-e45bee93ae0f)
+
+<img src="https://imgur.com/G3ebCl3.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -128,13 +127,13 @@ Execute the process.
 12.) Register PHP from within IIS by selecting "PHP Manager" and then "Register new PHP version".
   
 <p>
-  
-![Screenshot 2023-06-30 152741](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/8b500888-f14c-4f2e-9975-c1a29313088e)
+
+<img src="https://imgur.com/wku9JQW.png" alt="osTicket logo"/>
 
 </p>
 <p>
 
-![Screenshot 2023-06-30 152913](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/bdc4e2ff-bb86-497e-9027-4c6dc9a294ce)
+<img src="https://imgur.com/BmfOkiA.png" alt="osTicket logo"/>
 
 </p>
 
@@ -143,8 +142,8 @@ Execute the process.
 You should provide a path to the PHP executable file (php-cgi.exe) by going to the C Drive, then PHP folder and clicking on the php-cgi file.
   
 <p>
-  
-![Screenshot 2023-06-30 153347](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/77e869bc-6d45-41e8-93d9-3fe691e949cf)
+
+<img src="https://imgur.com/DwStgn2.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -152,9 +151,8 @@ You should provide a path to the PHP executable file (php-cgi.exe) by going to t
 Restart the IIS server.
   
 <p>
-  
-![Screenshot 2023-06-30 155830](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/4dff4de4-dd08-423d-a88c-67d919a1b1a7)
 
+<img src="https://imgur.com/o5lidAO.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -166,8 +164,8 @@ Restart the IIS server again.
 14.) Within IIS expand "Sites", then "Default", and finally "osTicket".  In the right column, select “Browse *:80 (http)”
   
 <p>
-  
-![Screenshot 2023-06-30 160647](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/96ab3b2c-a770-4e82-8c2c-07ce53af5bc5)
+
+<img src="https://imgur.com/60Hfno4.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -175,9 +173,8 @@ Restart the IIS server again.
 You will observe that some recommended extensions are not enabled on the osTicket browser.
   
 <p>
-  
-![Screenshot 2023-06-30 161111](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/d04b8e3d-7765-49d0-bcf9-ff2e46ad1e04)
 
+<img src="https://imgur.com/UIh8Fji.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -196,7 +193,7 @@ Enable the following extensions:
   
 <p>
 
-![Screenshot 2023-06-30 161507](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/4c68e1a3-0ca7-4c62-9a2e-426bd04539af)
+<img src="https://imgur.com/DL2H8Rl.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -211,7 +208,7 @@ From there click "Security" then "Advanced".
 
 <p>
 
-![Screenshot 2023-06-30 162302](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/559a8df5-0f87-49f6-9961-3c9acffac14f)
+<img src="https://imgur.com/TmNgtXp.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -220,15 +217,15 @@ Remove all inherited permissions from this object by clicking "Remove all inheri
 
 <p>
 
-![Screenshot 2023-06-30 162344](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/653819b4-ac60-4fd0-88b9-e70a3c99ced2)
+<img src="https://imgur.com/su4bwVj.png" alt="osTicket logo"/>
 
 <p>
   
 Now add new permissions by selecting "Add".
   
 <p>
-  
-![Screenshot 2023-06-30 162829](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/a41be098-1365-4884-bed1-8246ba729cd8)
+
+<img src="https://imgur.com/JUp1eYz.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -236,8 +233,8 @@ Now add new permissions by selecting "Add".
 Select a principal.
   
 <p>
-  
-![Screenshot 2023-06-30 163405](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/cedd1941-9aa9-401b-85b6-16aed5ecc2ec)
+
+<img src="https://imgur.com/Uwrt3Xk.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -246,8 +243,8 @@ Select a principal.
 Enter "Everyone" into the box and click "OK".
   
 <p>
-  
-![Screenshot 2023-06-30 163532](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/9c8bf06e-54db-4a42-8a0b-417fedc90a5d)
+
+<img src="https://imgur.com/THAuy1h.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -255,8 +252,8 @@ Enter "Everyone" into the box and click "OK".
 Check all boxes and click "OK".
   
 <p>
-  
-![Screenshot 2023-06-30 163804](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/fc6bce4e-5cf5-4b8b-a544-0295431ffe29)
+
+<img src="https://imgur.com/SSdD4ne.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -275,8 +272,8 @@ Next, you need to download, install, and launch HeidiSQL from the provided downl
 Once the program is launched, create a new session in it.
   
 <p>
-  
-![Screenshot 2023-06-30 164614](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/4099b503-923d-4d99-9acc-4b244263b82e)
+
+<img src="https://imgur.com/1PIJAHv.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -285,7 +282,7 @@ Set the user to "root" and the password to "Password1".  Click "Open".
   
 <p>
 
-![Screenshot 2023-06-30 164755](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/25e82c16-ab96-4b41-aa1a-d6e2817f6591)
+<img src="https://imgur.com/S1gtxD1.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -298,7 +295,7 @@ Next you need to create a new database within HeidiSQL. In HeidiSQL, right click
 
 <p>
 
-![Screenshot 2023-06-30 165150](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/788dad7d-bcd0-4636-82e8-d1c38cc292ab)
+<img src="https://imgur.com/TWLA3Ep.png" alt="osTicket logo"/>
 
 <p>
 
@@ -307,8 +304,8 @@ Name the new database "osTicket".
 Return to the osTicket browser and under MySQL Database type in "osTicket".
   
 <p>
-  
-![Screenshot 2023-06-30 165406](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/3fa527d4-5d66-4925-b3d6-92caaa3b66e6)
+
+<img src="https://imgur.com/Vd4s9T0.png" alt="osTicket logo"/>
 
 </p>
 <p>
@@ -318,15 +315,15 @@ The last step is to do some clean up.  Start by deleting the setup folder. Delet
 Next, set the permissions back to "Read" only in the ost-config.php file.
   
 <p>
-  
-![Screenshot 2023-06-30 165823](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/4bfe4773-4ab1-43a1-a3c4-3c7aca73f582)
+
+<img src="https://imgur.com/NjMa2bP.png" alt="osTicket logo"/>
 
 </p>
 <p>
   
 <p>
-  
-![Screenshot 2023-06-30 165847](https://github.com/rya-fenner/osticket-prereqs/assets/136194969/492019cf-d8fe-4e98-bc48-ebac68939e90)
+
+<img src="[https://imgur.com/Vd4s9T0](https://imgur.com/IShGSpF).png" alt="osTicket logo"/>
 
 </p>
 <p>
