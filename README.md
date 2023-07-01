@@ -101,7 +101,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   
 10.) Next, download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi).  Run the setup wizard selecting "Typical Setup" and then "Launch Configuration Wizard" followed by "Standard Configuration".
 
-Make the new root password: <b>Password1</b>
+Make the new root password <b>Password1</b>
   
 <p>
   
